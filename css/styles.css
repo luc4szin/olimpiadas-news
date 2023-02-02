@@ -1,0 +1,177 @@
+:root {
+  --cor-de-fundo: #2a2a35;
+  --cor-cabecalho: #ffffff;
+  --cor-legenda: #555;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  width: 100%;
+}
+
+header {
+  background-color: var(--cor-de-fundo);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+}
+
+header h1 {
+  font-size: 2em;
+  color: var(--cor-cabecalho);
+  font-weight: 700;
+}
+
+header img {
+  width: 100px;
+  height: 50px;
+}
+
+header input {
+  width: 150px;
+  height: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+  background-color: var(--cor-de-fundo);
+}
+
+nav ul li {
+  display: flex;
+  justify-content: center;
+  color: var(--cor-cabecalho);
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+#botao-cadastro {
+  text-decoration: none;
+  color: var(--cor-cabecalho);
+  border: var(--cor-cabecalho) solid 2px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+footer {
+  color: var(--cor-cabecalho);
+  background-color: var(--cor-de-fundo);
+  text-align: center;
+  padding: 25px 0px 25px 0px;
+  font-size: 1em;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+section div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 272px;
+  height: 272px;
+}
+
+article {
+  border: var(--cor-de-fundo) solid 1px;
+  margin: 15px;
+}
+
+article h2 {
+  margin: 10px;
+}
+
+article p {
+  text-align: justify;
+  margin: 10px;
+}
+
+article figcaption {
+  color: var(--cor-legenda);
+  margin: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+fieldset {
+  margin: 10px;
+  padding: 5px;
+  width: 200px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 200px;
+}
+
+header div input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+header div label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 60px;
+  height: 30px;
+  background: var(--cor-cabecalho);
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: var(--cor-de-fundo);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: black;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 30px;
+}
+
+.busca {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+section.dark {
+  background-color: #212121;
+  color: var(--cor-cabecalho);
+}

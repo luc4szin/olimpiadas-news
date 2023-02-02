@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="img/simbolo-das-olimpiadas.png" alt="simbolo-das-olimpiadas"
+      /></a>
+      <h1>Olimpíadas News</h1>
+      <div class="busca">
+        <input type="text" placeholder="Buscar..." />
+        <div>
+          <input type="checkbox" id="switch" onclick="toDark()" />
+          <label for="switch">Toggle</label>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li>Esporte</li>
+        <li>Saúde</li>
+        <li>Lazer</li>
+        <li>Olímpiadas</li>
+        <li>Notícias</li>
+      </ul>
+    </nav>
+    <main>
+      <form
+        action="https://formsubmit.co/lucas.henrique190405@gmail.com"
+        method="post"
+      >
+        <fieldset>
+          <legend>Dados Pessoais:</legend>
+          <br />
+          <label for="nome">Nome Completo:</label><br />
+          <input type="text" name="nome" id="nome" /> <br /><br />
+          <label for="data_nascimento">Data de Nascimento:</label><br />
+          <input
+            type="date"
+            name="data_nascimento"
+            id="data_nascimento"
+          /><br /><br />
+          <label for="sexo">Sexo:</label><br />
+          <input type="radio" name="sexo" id="M" />
+          <label for="M">M</label><br />
+          <input type="radio" name="sexo" id="F" />
+          <label for="F">F</label><br />
+          <input type="radio" name="sexo" id="Não Definido" />
+          <label for="nao_definido">Não Definido</label><br /><br />
+          <label for="senha">Senha:</label><br />
+          <input type="password" name="senha" id="senha" /><br /><br />
+          <label for="senha">Confirmar senha:</label><br />
+          <input
+            type="password"
+            name="confirmar_senha"
+            id="confirmar_senha"
+          /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Endereço:</legend>
+          <br />
+          <label for="rua">Rua:</label><br />
+          <input type="text" name="rua" id="rua" /><br /><br />
+          <label for="cidade">Cidade:</label><br />
+          <input type="text" name="cidade" id="cidade" /><br /><br />
+          <label for="estado">Estado:</label><br />
+          <select name="estado" id="estado">
+            <option value="selecione">Selecione</option>
+            <option value="Acre">Acre</option>
+            <option value="Alagoas">Alagoas</option>
+            <option value="Amapa">Amapá</option>
+            <option value="Amazonas">Amazonas</option>
+            <option value="Bahia">Bahia</option>
+            <option value="Ceara">Ceará</option>
+            <option value="Espirito_Santo">Espírito Santo</option>
+            <option value="Goias">Goiás</option>
+            <option value="Maranhao">Maranhão</option>
+            <option value="Mato_Grosso">Mato Grosso</option>
+            <option value="Mato_Grosso_do_Sul">Mato Grosso do Sul</option>
+            <option value="Minas_Gerais	">Minas Gerais</option>
+            <option value="Para">Pará</option>
+            <option value="Paraiba">Paraíba</option>
+            <option value="Parana">Paraná</option>
+            <option value="Pernambuco">Pernambuco</option>
+            <option value="Piaui">Piauí</option>
+            <option value="Rio_de_Janeiro">Rio de Janeiro</option>
+            <option value="Rio_Grande_do_Norte">Rio Grande do Norte</option>
+            <option value="Rio_Grande_do_Sul">Rio Grande do Sul</option>
+            <option value="Rondonia">Rondônia</option>
+            <option value="Roraima">Roraima</option>
+            <option value="Santa_Catarina	">Santa Catarina</option>
+            <option value="Sao_Paulo">São Paulo</option>
+            <option value="Sergipe">Sergipe</option>
+            <option value="Tocantins">Tocantins</option>
+            <option value="Distrito_Federal">Distrito Federal</option>
+          </select>
+          <br /><br />
+          <label for="cep">CEP:</label><br />
+          <input type="text" name="cep" id="cep" /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Sports:</legend>
+          <br />
+          <input type="checkbox" id="esporte1" name="esporte1" />
+          <label for="esporte1">Futebol</label><br />
+          <input type="checkbox" id="esporte2" name="esporte2" />
+          <label for="esporte2">Handebol</label><br />
+          <input type="checkbox" id="esporte3" name="esporte3" />
+          <label for="esporte3">Basquete</label><br /><br />
+          <input type="submit" value="Cadastrar" /><br /><br />
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
